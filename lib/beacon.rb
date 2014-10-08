@@ -1,5 +1,5 @@
-require 'open3'
 $:.unshift File.join(File.dirname(__FILE__))
+
 module Beacon
   class Magic
     
