@@ -5,8 +5,8 @@ module Beacon
     
     def initialize
       @beacon = %{ibeacon --scan}
-  	end
-  
+    end
+
     def parse_advertisement
       while(@ad = IO.popen(@beacon)) do
         ibeacon = Ibeacon.new
